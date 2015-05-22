@@ -1,0 +1,5 @@
+name = Pontrendszer nyilvantartas
+description = Torzsvasarloi pontok es kedvezmenyek nyilvantartasa
+core = 7.x
+version = 1.0 
+dependencies[] = devel

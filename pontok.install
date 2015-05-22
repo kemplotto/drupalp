@@ -1,0 +1,47 @@
+<?php
+
+function vasarlo_schema() {
+  $schema['vasarlo'] = array(
+    'description' => 'Vasarlok',
+    'fields' => array(
+      'nev' => array(
+        'type' => 'varchar',
+        'length' => 255,
+      ),
+	  
+      'cim' => array(
+        'type' => 'varchar',
+        'length' => 255,
+      ),
+	  
+      'telefonszam' => array(
+        'type' => 'varchar',
+        'length' => 255,
+	),
+
+      'pontok' => array(
+        'type' => 'int',
+      ),
+	  
+     'email' => array(
+        'type' => 'varchar',
+        'length' => 255,
+      ),
+	  
+      'azonosito' => array(
+        'type' => 'varchar',
+        'length' => 255,
+	),
+	
+    'primary key' => array('azonosito'),
+    'indexes' => array(
+      'nev' => array('nev'),
+      'cim' => array('cim'),
+      'telefonszam' => array('telefonszam'),
+      'email' => array('email'),
+      'pontok' => array('pontok'),
+    
+    ),
+  );
+  return $schema;
+}
